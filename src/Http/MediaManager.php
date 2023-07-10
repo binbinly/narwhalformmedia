@@ -82,7 +82,7 @@ class MediaManager extends Extension
      */
     protected function getFullPath($path)
     {
-        return $this->storage->getDriver()->getAdapter()->applyPathPrefix($path);
+        return $this->storage->path($path);
     }
 
     public function download()
